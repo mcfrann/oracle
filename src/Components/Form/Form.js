@@ -1,12 +1,4 @@
-import { useState } from 'react'
-
 const Form = ({ updateQuestion, submitQuestion, value }) => {
-  // const [currentQuestion, setCurrentQuestion] = useState('')
-
-  // const updateQuestion = (e) => {
-  //   setCurrentQuestion(e.target.value)
-  // }
-
   return (
     <form className='questionForm'>
       <input
