@@ -1,6 +1,6 @@
-const QuestionTile = ({ key, question, answer }) => {
+const QuestionTile = ({ id, question, answer }) => {
   return (
-    <div className='questionTile' id={key}>
+    <div className='questionTile' id={id}>
       <h1 className='you'>You: </h1>
       <h1 className='question'>{question}</h1>
       <br />
