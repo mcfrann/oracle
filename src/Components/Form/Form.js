@@ -1,18 +1,18 @@
 import { useState } from 'react'
 
-const Form = () => {
-  const [currentQuestion, setCurrentQuestion] = useState('')
+const Form = ({ updateQuestion, submitQuestion, value }) => {
+  // const [currentQuestion, setCurrentQuestion] = useState('')
 
-  const updateQuestion = (e) => {
-    setCurrentQuestion(e.target.value)
-  }
+  // const updateQuestion = (e) => {
+  //   setCurrentQuestion(e.target.value)
+  // }
 
   return (
     <form className='questionForm'>
       <input
         type='text'
         name='question'
-        value={currentQuestion}
+        value={value}
         className='questionBox'
         onChange={updateQuestion}
       />
@@ -20,6 +20,7 @@ const Form = () => {
         type='submit'
         value='Ask Oracle Oliver'
         className='submitQuestion'
+        onClick={submitQuestion}
       />
     </form>
   )
