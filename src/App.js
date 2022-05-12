@@ -9,35 +9,37 @@ const App = () => {
     {
       id: '',
       you: '',
-      oracleOliver: ''
+      oracleOliver: '',
+      error: ''
     }
   ])
-  const questionPrompt = conversation[0].you
+  // let questionPrompt = conversation[0].you
 
   const updateQuestion = (e) => {
     setConversation([
       {
         id: '',
         you: e.target.value,
-        oracleOliver: ''
+        oracleOliver: '',
+        error: ''
       }
     ])
   }
 
   const submitQuestion = (e) => {
-    e.prevent.default(e)
-    postQuestion(questionPrompt)
+    e.preventDefault(e)
+    postQuestion(conversation[0].you)
       .then((response) => response.json())
-      .then((response) =>
-        setConversation([
-          {
-            id: Date.now(),
-            you: questionPrompt,
-            oracleOliver: response
-          },
-          ...conversation
-        ])
-      )
+      .then((answer) => {
+        const questionAnswer = {
+          id: Date.now(),
+          you: conversation[0].you,
+          oracleOliver: answer,
+          error: ''
+        }
+        setConversation((prevQuestionAnswer) => questionAnswer)
+      })
+    // .catch((error) => setConversation((prevError) => conversation[0].error))
   }
 
   return (
@@ -46,7 +48,7 @@ const App = () => {
       <Form
         updateQuestion={updateQuestion}
         submitQuestion={submitQuestion}
-        value={questionPrompt}
+        value={conversation[0].you}
       />
       <QuestionContainer conversation={conversation} />
     </div>
