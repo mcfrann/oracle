@@ -5,6 +5,8 @@ import QuestionContainer from './Components/QuestionContainer/QuestionContainer'
 import { postQuestion } from './apiPrompt'
 
 const App = () => {
+  const [question, setQuestion] = useState('')
+  // const [answer, setAnswer] = useState('')
   const [conversation, setConversation] = useState([
     {
       id: '',
@@ -13,33 +15,25 @@ const App = () => {
       error: ''
     }
   ])
-  // let questionPrompt = conversation[0].you
 
   const updateQuestion = (e) => {
-    setConversation([
-      {
-        id: '',
-        you: e.target.value,
-        oracleOliver: '',
-        error: ''
-      }
-    ])
+    setQuestion(e.target.value)
   }
 
   const submitQuestion = (e) => {
     e.preventDefault(e)
-    postQuestion(conversation[0].you)
+    postQuestion(question)
       .then((response) => response.json())
       .then((answer) => {
+        console.log(answer.choices[0].text)
         const questionAnswer = {
           id: Date.now(),
-          you: conversation[0].you,
-          oracleOliver: answer,
+          you: question,
+          oracleOliver: answer.choices[0].text,
           error: ''
         }
-        setConversation((prevQuestionAnswer) => questionAnswer)
+        setConversation((prevState) => [questionAnswer, ...conversation])
       })
-    // .catch((error) => setConversation((prevError) => conversation[0].error))
   }
 
   return (
@@ -47,8 +41,8 @@ const App = () => {
       <h1>Oracle Oliver</h1>
       <Form
         updateQuestion={updateQuestion}
-        submitQuestion={submitQuestion}
-        value={conversation[0].you}
+        submitQuestion={(e) => submitQuestion(e)}
+        value={question}
       />
       <QuestionContainer conversation={conversation} />
     </div>
