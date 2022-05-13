@@ -1,3 +1,5 @@
+import './Form.css'
+
 const Form = ({ updateQuestion, submitQuestion, value }) => {
   return (
     <form className='questionForm'>
