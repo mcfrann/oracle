@@ -1,0 +1,7 @@
+.questionContainer {
+  height: 33vh;
+  overflow: scroll;
+  margin: 1em;
+  background-color: #f7cbbd;
+  border-radius: 1em;
+}
