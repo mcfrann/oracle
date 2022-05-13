@@ -43,12 +43,14 @@ const App = () => {
         <h1 className='title'>Oracle Oliver</h1>
         <img src={oliverIMG} alt='Oracle Oliver image' className='oliverImg' />
       </header>
-      <Form
-        updateQuestion={updateQuestion}
-        submitQuestion={(e) => submitQuestion(e)}
-        value={question}
-      />
-      <QuestionContainer conversation={conversation} />
+      <section className='form-container'>
+        <Form
+          updateQuestion={updateQuestion}
+          submitQuestion={(e) => submitQuestion(e)}
+          value={question}
+        />
+        <QuestionContainer conversation={conversation} />
+      </section>
     </div>
   )
 }
