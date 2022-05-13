@@ -1,4 +1,5 @@
 import QuestionTile from '../QuestionTile/QuestionTile'
+import './QuestionContainer.css'
 
 const QuestionContainer = ({ conversation }) => {
   const questions = conversation.map((convo) => {
