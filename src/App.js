@@ -40,10 +40,16 @@ const App = () => {
   return (
     <div className='App'>
       <header>
-        <h1 className='title'>Oracle Oliver</h1>
-        <img src={oliverIMG} alt='Oracle Oliver image' className='oliverImg' />
+        <img
+          src={oliverIMG}
+          alt='Oracle Oliver image'
+          className='oliverImg shake-lr'
+        />
       </header>
       <section className='form-container'>
+        <div className='title-container'>
+          <h1 className='title'>Oracle Oliver</h1>
+        </div>
         <Form
           updateQuestion={updateQuestion}
           submitQuestion={(e) => submitQuestion(e)}
