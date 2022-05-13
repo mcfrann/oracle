@@ -3,7 +3,8 @@ import { useState } from 'react'
 import Form from './Components/Form/Form'
 import QuestionContainer from './Components/QuestionContainer/QuestionContainer'
 import { postQuestion } from './apiPrompt'
-import oliverIMG from './images/oracle-oliver.png'
+import backgroundIMG from './images/background-image.jpg'
+import crystalBall from './images/crystal-ball.png'
 
 const App = () => {
   const [question, setQuestion] = useState('')
@@ -39,16 +40,16 @@ const App = () => {
 
   return (
     <div className='App'>
-      <header>
+      {/* <header>
         <img
-          src={oliverIMG}
-          alt='Oracle Oliver image'
-          className='oliverImg shake-lr'
+          src={crystalBall}
+          alt='Crystal ball image'
+          className='crystalBallImg shake-lr'
         />
-      </header>
+      </header> */}
       <section className='form-container'>
         <div className='title-container'>
-          <h1 className='title'>Oracle Oliver</h1>
+          {/* <h1 className='title'>Oracle Oliver</h1> */}
         </div>
         <Form
           updateQuestion={updateQuestion}
