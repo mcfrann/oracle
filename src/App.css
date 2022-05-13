@@ -1,1 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500&family=Dancing+Script:wght@700&display=swap');
 
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #5e936f;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5em;
+  color: white;
+  margin: 0;
+}
+
+.oliverImg {
+  width: 100%;
+}
