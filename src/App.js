@@ -40,7 +40,7 @@ const App = () => {
   return (
     <div className='App'>
       <header>
-        <h1>Oracle Oliver</h1>
+        <h1 className='title'>Oracle Oliver</h1>
         <img src={oliverIMG} alt='Oracle Oliver image' className='oliverImg' />
       </header>
       <Form
