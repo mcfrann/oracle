@@ -1,0 +1,13 @@
+.questionTile {
+  width: 35vw;
+  background-color: #3e6d4c;
+  border-radius: 1em;
+  margin: 1em;
+  /* color: #fefee4; */
+}
+
+.text-container {
+  /* width: 33vw; */
+  /* margin: 1em; */
+  padding: 0.5em;
+}
