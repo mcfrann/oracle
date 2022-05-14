@@ -1,4 +1,5 @@
 import './Form.css'
+import PropTypes from 'prop-types'
 
 const Form = ({ updateQuestion, submitQuestion, value }) => {
   return (
@@ -8,7 +9,6 @@ const Form = ({ updateQuestion, submitQuestion, value }) => {
       </label>
       <input
         type='text'
-        // name='question'
         id='questionBox'
         value={value}
         className='question-box'
@@ -27,3 +27,9 @@ const Form = ({ updateQuestion, submitQuestion, value }) => {
 }
 
 export default Form
+
+Form.propTypes = {
+  updateQuestion: PropTypes.any,
+  submitQuestion: PropTypes.any,
+  value: PropTypes.string
+}

@@ -1,17 +1,17 @@
 import './App.css'
 import { useState } from 'react'
+import { postQuestion } from './apiPrompt'
 import Form from './Components/Form/Form'
 import QuestionContainer from './Components/QuestionContainer/QuestionContainer'
-import { postQuestion } from './apiPrompt'
 
 const App = () => {
   const [question, setQuestion] = useState('')
+  const [error, setError] = useState('')
   const [conversation, setConversation] = useState([
     {
       id: '',
       you: '',
-      oracleOliver: '',
-      error: ''
+      oracle: ''
     }
   ])
 
@@ -22,17 +22,26 @@ const App = () => {
   const submitQuestion = (e) => {
     e.preventDefault(e)
     postQuestion(question)
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          setError((prevState) => 'Uh oh. Please try another question.')
+        } else {
+          return response.json()
+        }
+      })
       .then((answer) => {
-        console.log(answer.choices[0].text)
         const questionAnswer = {
           id: Date.now(),
           you: question,
-          oracleOliver: answer.choices[0].text,
-          error: ''
+          oracle: answer.choices[0].text
         }
         setConversation((prevState) => [questionAnswer, ...conversation])
+        clearInput()
       })
+  }
+
+  const clearInput = () => {
+    setQuestion((prevState) => '')
   }
 
   return (
@@ -40,7 +49,7 @@ const App = () => {
       <section className='form-container'>
         <Form
           updateQuestion={updateQuestion}
-          submitQuestion={(e) => submitQuestion(e)}
+          submitQuestion={submitQuestion}
           value={question}
         />
         <QuestionContainer conversation={conversation} />

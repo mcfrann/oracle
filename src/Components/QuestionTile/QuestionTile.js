@@ -1,4 +1,5 @@
 import './QuestionTile.css'
+import PropTypes from 'prop-types'
 
 const QuestionTile = ({ id, question, answer }) => {
   return (
@@ -12,3 +13,9 @@ const QuestionTile = ({ id, question, answer }) => {
 }
 
 export default QuestionTile
+
+QuestionTile.propTypes = {
+  id: PropTypes.number,
+  question: PropTypes.string,
+  answer: PropTypes.string
+}

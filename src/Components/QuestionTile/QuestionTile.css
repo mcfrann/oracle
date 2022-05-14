@@ -2,24 +2,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 37vw;
-  /* height: 15vh; */
+  width: 40vw;
   background-color: #d8ba85;
   border-radius: 0.2em;
-  margin: 1em;
   color: #2e2e2e;
   font-size: 1.5rem;
-  /* color: #fefee4; */
+  margin: 1em;
 }
 
 .text-container {
-  /* width: 33vw; */
-  /* margin: 1em; */
-  padding-top: 0;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  margin: 0;
 }
+
+/* ------------------ effects ------------------ */
 
 .fade-in-fwd {
   -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -51,9 +47,11 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+/* ------------------ breakpoints ------------------ */
+
+@media screen and (max-width: 800px) {
   .question-tile {
-    width: 55vw;
+    width: 65vw;
     font-size: 2em;
   }
 }

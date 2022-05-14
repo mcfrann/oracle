@@ -1,36 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500&family=Zen+Loop&display=swap');
-
 .question-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
   height: 23vh;
-  width: 50vw;
+  width: 100vw;
   margin-top: 18em;
 }
 
 .label {
-  margin-bottom: 0.3em;
-  color: #fefee4;
   font-size: 2rem;
+  color: #fefee4;
+  margin-bottom: 0.3em;
 }
 
 .question-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   width: 35vw;
-  height: 35vh;
-  border-radius: 0.2em;
   border: 0;
+  border-radius: 0.1em;
   margin-bottom: 0.5em;
-  background-color: #fefee5;
+  outline: none;
   font-size: 3em;
   color: #2e2e2e;
-  font-family: 'Zen Loop', cursive;
   font-weight: 600;
-  outline: none;
+  background-color: #fefee5;
+  font-family: 'Zen Loop', cursive;
 }
 
 .submit-question {
@@ -44,6 +38,8 @@
   font-family: 'Zen Loop', cursive;
   font-weight: 600;
 }
+
+/* ------------------ effects ------------------ */
 
 .shadow-drop-center:hover {
   cursor: pointer;
@@ -103,9 +99,11 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+/* ------------------ breakpoints ------------------ */
+
+@media screen and (max-width: 800px) {
   .question-box {
-    width: 55vw;
+    width: 65vw;
   }
 
   .submit-question {
