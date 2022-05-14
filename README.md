@@ -12,13 +12,13 @@ Check out the deployed site [here](REPLACE LINK).
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Technical Requirements](#technical)
-- [Technologies and Tools](#technologies)
-- [Project Goals](#Goals)
-- [Site Examples](#screenshots)
-- [Install and Setup](#Install)
-- [Attributions](#attributions)
+- Overview
+- Technical Requirements
+- Technologies and Tools
+- Project Goals
+- Site Examples
+- Install and Setup
+- Attributions
 
 
 ## Overview
