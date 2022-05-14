@@ -15,39 +15,7 @@
   font-family: 'Zen Loop', cursive;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-}
-
-.title-container {
-  height: 33vh;
-}
-
-.title {
-  /* font-family: 'Dancing Script', cursive; */
-  font-size: 7em;
-  color: #fefee5;
-  /* color: #f7cbbd; */
-  margin-top: 0.5em;
-  margin-bottom: 0.3em;
-}
-
-.crystalBallImg {
-  width: 100%;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  /* padding: 1em; */
-}
+/* ------------------ effects ------------------ */
 
 .shake-lr:hover {
   -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
