@@ -2,18 +2,24 @@ import './Form.css'
 
 const Form = ({ updateQuestion, submitQuestion, value }) => {
   return (
-    <form className='questionForm'>
+    <form className='question-form fade-in-top' onSubmit={submitQuestion}>
+      <label htmlFor='questionBox' className='label'>
+        Have a Question?
+      </label>
       <input
         type='text'
-        name='question'
+        // name='question'
+        id='questionBox'
         value={value}
-        className='questionBox'
+        className='question-box'
         onChange={updateQuestion}
+        autoFocus
       />
       <input
         type='submit'
-        value='Ask Oracle Oliver'
-        className='submitQuestion'
+        id='submit'
+        value='Ask the Oracle'
+        className='submit-question shadow-drop-center'
         onClick={submitQuestion}
       />
     </form>
