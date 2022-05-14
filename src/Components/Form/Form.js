@@ -9,7 +9,6 @@ const Form = ({ updateQuestion, submitQuestion, value }) => {
       </label>
       <input
         type='text'
-        // name='question'
         id='questionBox'
         value={value}
         className='question-box'
