@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Oracle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Shopify's Front End Developer Challenge for the Fall of 2022.
 
-## Available Scripts
+##### Created by:
 
-In the project directory, you can run:
+Francesca McConnell | [Github](https://github.com/mcfrann), [LinkedIn](https://www.linkedin.com/in/francesca-mcconnell/)
 
-### `npm start`
+### Deploy Link
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check out the deployed site [here](REPLACE LINK).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Overview](#overview)
+- [Technologies and Tools](#technologies)
+- [Site Examples](#screenshots)
+- [Install and Setup](#Install)
+- [Project Goals](#Goals)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Overview
 
-### `npm run build`
+Struggle with life's deepest questions. Ask Oracle.
+Oracle is a simple application that reacts with GPT-3, an AI model crafted by [OpenAI](https://openai.com/api/). By entering your burning questions, you interact with a formatted simulation of a wise Oracle. Responses from Oracle hint at inspiration and mystery with just a touch of existentialism.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technical Requirements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] Simple-to-use interface
+- [x] A form for entering text prompts
+- [x] Submitting the form sends the prompt to the OpenAI API
+- [x] Results are displayed in a list, sorted from newest to oldest. Each result should include the original prompt and a response from the API.
+- [x] The HTML that ends up being served client-side should be accessible and semantic
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Extras:
 
-### `npm run eject`
+- [x] Nicer design
+- [x] Make the app more specific to a single purpose.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies and Tools
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- JavaScript
+- React
+- HTML
+- CSS
+- Figma
+- GitHub Projects
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Goals
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The goal of this project was to showcase my front-end development skills, meet specified requirements, and highlight my love of design for Shopify's Front End Internship Challenge.
 
-## Learn More
+## Site Examples
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ask Oracle your questions:
+![siteGIF](https://media.giphy.com/media/LRNJQfRMud1rUQaiB6/giphy.gif)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Scroll through your answers, from newest to oldest:
+![scrollingGif](https://media.giphy.com/media/K9yHD9iTw1UhmmRCdD/giphy.gif)
 
-### Code Splitting
+Responsive mobile-friendly design:
+![mobile](https://media.giphy.com/media/I1NcdqKjTE0rscrBto/giphy.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Install and Setup
 
-### Analyzing the Bundle Size
+To run this app locally:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Run `git clone git@github.com:mcfrann/oracle.git` in your command line
+2. Run `cd oracle` to navigate into the repository
+3. Run `npm install`
+4. Run `npm start`
 
-### Making a Progressive Web App
+Alternatively, visit the deployment link above!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Attributions
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks to OpenAI for making such a cool [API](https://openai.com/api/) and thank you to [Shopify](https://www.shopify.com/) for your consideration!
