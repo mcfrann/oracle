@@ -47,7 +47,7 @@ Oracle is a simple application that reacts with GPT-3, an AI model crafted by [O
 
 ## Project Goals
 
-The goal of this project was to showcase my front-end development skills, meet specified requirements, and highlight my love of design for Shopify's Front End Internship Challenge.
+The goal of this project was to showcase my front-end development skills, meet specified requirements, and highlight my love of design for Shopify's Front End Developer Challenge.
 
 ## Site Examples
 
