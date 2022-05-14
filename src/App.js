@@ -1,8 +1,8 @@
 import './App.css'
 import { useState } from 'react'
+import { postQuestion } from './apiPrompt'
 import Form from './Components/Form/Form'
 import QuestionContainer from './Components/QuestionContainer/QuestionContainer'
-import { postQuestion } from './apiPrompt'
 
 const App = () => {
   const [question, setQuestion] = useState('')
@@ -32,7 +32,12 @@ const App = () => {
           error: ''
         }
         setConversation((prevState) => [questionAnswer, ...conversation])
+        clearInput()
       })
+  }
+
+  const clearInput = () => {
+    setQuestion((prevState) => '')
   }
 
   return (
