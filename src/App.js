@@ -3,12 +3,9 @@ import { useState } from 'react'
 import Form from './Components/Form/Form'
 import QuestionContainer from './Components/QuestionContainer/QuestionContainer'
 import { postQuestion } from './apiPrompt'
-import backgroundIMG from './images/background-image.jpg'
-import crystalBall from './images/crystal-ball.png'
 
 const App = () => {
   const [question, setQuestion] = useState('')
-  // const [answer, setAnswer] = useState('')
   const [conversation, setConversation] = useState([
     {
       id: '',
@@ -19,7 +16,7 @@ const App = () => {
   ])
 
   const updateQuestion = (e) => {
-    setQuestion(e.target.value)
+    setQuestion((prevState) => e.target.value)
   }
 
   const submitQuestion = (e) => {
@@ -39,18 +36,8 @@ const App = () => {
   }
 
   return (
-    <div className='App'>
-      {/* <header>
-        <img
-          src={crystalBall}
-          alt='Crystal ball image'
-          className='crystalBallImg shake-lr'
-        />
-      </header> */}
+    <main className='App'>
       <section className='form-container'>
-        <div className='title-container'>
-          {/* <h1 className='title'>Oracle Oliver</h1> */}
-        </div>
         <Form
           updateQuestion={updateQuestion}
           submitQuestion={(e) => submitQuestion(e)}
@@ -58,7 +45,7 @@ const App = () => {
         />
         <QuestionContainer conversation={conversation} />
       </section>
-    </div>
+    </main>
   )
 }
 
