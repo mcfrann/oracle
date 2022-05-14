@@ -52,12 +52,15 @@ The goal of this project was to showcase my front-end development skills, meet s
 ## Site Examples
 
 Ask Oracle your questions:
+
 ![siteGIF](https://media.giphy.com/media/LRNJQfRMud1rUQaiB6/giphy.gif)
 
 Scroll through your answers, from newest to oldest:
+
 ![scrollingGif](https://media.giphy.com/media/K9yHD9iTw1UhmmRCdD/giphy.gif)
 
 Responsive mobile-friendly design:
+
 ![mobile](https://media.giphy.com/media/I1NcdqKjTE0rscrBto/giphy.gif)
 
 ## Install and Setup
