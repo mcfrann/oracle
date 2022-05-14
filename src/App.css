@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   background-color: #2e2e2e;
   background-image: url('./images/background-img.jpg');
   background-size: auto 100%;

@@ -10,10 +10,18 @@
 }
 
 .gradient-scroll {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   z-index: 1;
   background: linear-gradient(to bottom, transparent, rgba(46, 46, 46));
   height: 13%;
   width: 100%;
+}
+
+/* ------------------ breakpoints ------------------ */
+
+@media screen and (max-width: 500px) {
+  .question-container {
+    height: 50vh;
+  }
 }
