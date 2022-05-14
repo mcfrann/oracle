@@ -1,5 +1,6 @@
 import QuestionTile from '../QuestionTile/QuestionTile'
 import './QuestionContainer.css'
+import PropTypes from 'prop-types'
 
 const QuestionContainer = ({ conversation }) => {
   let counter = 0
@@ -29,3 +30,7 @@ const QuestionContainer = ({ conversation }) => {
 }
 
 export default QuestionContainer
+
+QuestionContainer.propTypes = {
+  conversation: PropTypes.array
+}
