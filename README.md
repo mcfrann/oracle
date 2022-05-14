@@ -8,7 +8,7 @@ Francesca McConnell | [Github](https://github.com/mcfrann), [LinkedIn](https://w
 
 ### Deploy Link
 
-Check out the deployed site [here](REPLACE LINK).
+Check out the deployed site [here](https://oracle-ai.herokuapp.com/).
 
 ## Table of Contents
 
