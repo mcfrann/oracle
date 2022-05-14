@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500&family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500&family=Zen+Loop&display=swap');
 
 .App {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: #2e2e2e;
-  background-image: url('./images/background-image.jpg');
+  background-image: url('./images/background-img.jpg');
   background-size: auto 100%;
   background-size: cover;
   background-position: center top;
   background-repeat: no repeat;
+  font-family: 'Zen Loop', cursive;
 }
 
 header {
@@ -25,7 +28,7 @@ header {
 }
 
 .title {
-  font-family: 'Dancing Script', cursive;
+  /* font-family: 'Dancing Script', cursive; */
   font-size: 7em;
   color: #fefee5;
   /* color: #f7cbbd; */
