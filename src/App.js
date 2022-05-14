@@ -21,10 +21,12 @@ const App = () => {
 
   const submitQuestion = (e) => {
     e.preventDefault(e)
+    validate()
     postQuestion(question)
       .then((response) => {
         if (!response.ok) {
           setError((prevState) => 'Uh oh. Please try another question.')
+          alert(error)
         } else {
           return response.json()
         }
@@ -42,6 +44,10 @@ const App = () => {
 
   const clearInput = () => {
     setQuestion((prevState) => '')
+  }
+
+  const validate = () => {
+    !question && alert('Please enter a question.')
   }
 
   return (
