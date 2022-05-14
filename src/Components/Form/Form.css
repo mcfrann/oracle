@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500&family=Zen+Loop&display=swap');
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 23vh;
+  width: 50vw;
+  margin-top: 18em;
+}
+
+.label {
+  margin-bottom: 0.3em;
+  color: #fefee4;
+  font-size: 2rem;
+}
+
+.question-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 35vw;
+  height: 35vh;
+  border-radius: 0.2em;
+  border: 0;
+  margin-bottom: 0.5em;
+  background-color: #fefee5;
+  font-size: 3em;
+  color: #2e2e2e;
+  font-family: 'Zen Loop', cursive;
+  font-weight: 600;
+  outline: none;
+}
+
+.submit-question {
+  width: 20vw;
+  height: 25vh;
+  border-radius: 0.2em;
+  border: 0;
+  background-color: #f7cbbd;
+  color: #2e2e2e;
+  font-size: 1.5em;
+  font-family: 'Zen Loop', cursive;
+  font-weight: 600;
+}
+
+.shadow-drop-center:hover {
+  cursor: pointer;
+  -webkit-animation: shadow-drop-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 15px 0px rgba(255, 255, 255, 0.536);
+    box-shadow: 0 0 15px 0px rgba(255, 255, 255, 0.536);
+  }
+}
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 15px 0px rgba(255, 255, 255, 0.536);
+    box-shadow: 0 0 15px 0px rgba(255, 255, 255, 0.536);
+  }
+}
+
+.fade-in-top {
+  -webkit-animation: fade-in-top 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .question-box {
+    width: 55vw;
+  }
+
+  .submit-question {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .question-box {
+    width: 75vw;
+  }
+
+  .submit-question {
+    width: 55vw;
+    font-size: 2em;
+  }
+}

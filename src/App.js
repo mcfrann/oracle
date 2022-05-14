@@ -6,7 +6,6 @@ import { postQuestion } from './apiPrompt'
 
 const App = () => {
   const [question, setQuestion] = useState('')
-  // const [answer, setAnswer] = useState('')
   const [conversation, setConversation] = useState([
     {
       id: '',
@@ -17,7 +16,7 @@ const App = () => {
   ])
 
   const updateQuestion = (e) => {
-    setQuestion(e.target.value)
+    setQuestion((prevState) => e.target.value)
   }
 
   const submitQuestion = (e) => {
@@ -37,15 +36,16 @@ const App = () => {
   }
 
   return (
-    <div className='App'>
-      <h1>Oracle Oliver</h1>
-      <Form
-        updateQuestion={updateQuestion}
-        submitQuestion={(e) => submitQuestion(e)}
-        value={question}
-      />
-      <QuestionContainer conversation={conversation} />
-    </div>
+    <main className='App'>
+      <section className='form-container'>
+        <Form
+          updateQuestion={updateQuestion}
+          submitQuestion={(e) => submitQuestion(e)}
+          value={question}
+        />
+        <QuestionContainer conversation={conversation} />
+      </section>
+    </main>
   )
 }
 

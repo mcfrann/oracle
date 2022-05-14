@@ -1,8 +1,11 @@
 import QuestionTile from '../QuestionTile/QuestionTile'
+import './QuestionContainer.css'
 
 const QuestionContainer = ({ conversation }) => {
+  let counter = 0
   const questions = conversation.map((convo) => {
     if (convo.you && convo.oracleOliver) {
+      counter += 1
       return (
         <QuestionTile
           id={convo.id}
@@ -11,12 +14,18 @@ const QuestionContainer = ({ conversation }) => {
           answer={convo.oracleOliver}
         />
       )
-    } else {
-      return <h1 key='none'>Ask Oracle Oliver a question...</h1>
     }
   })
 
-  return <section className='questionContainer'>{questions}</section>
+  return (
+    <section className='question-container'>
+      {questions}
+      <div
+        className='gradient-scroll'
+        style={{ display: counter < 2 ? 'none' : 'block' }}
+      ></div>
+    </section>
+  )
 }
 
 export default QuestionContainer
