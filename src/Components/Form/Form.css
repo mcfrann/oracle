@@ -121,3 +121,9 @@
     font-size: 2em;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .submit-question {
+    font-size: 9vw;
+  }
+}
