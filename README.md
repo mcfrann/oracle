@@ -1,6 +1,7 @@
 # Oracle
 
 Shopify's Front End Developer Intern Challenge for the Fall of 2022.
+[Spec](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit)
 
 ##### Created by:
 
@@ -13,31 +14,35 @@ Check out the deployed site [here](https://oracle-ai.herokuapp.com/).
 ## Table of Contents
 
 - Overview
+- Project Goals
 - Technical Requirements
 - Technologies and Tools
-- Project Goals
 - Site Examples
 - Install and Setup
 - Attributions
 
-
 ## Overview
 
 Do you struggle with some of life's deepest questions? Ask Oracle.
-Oracle is a simple application that interacts with GPT-3, an AI model crafted by [OpenAI](https://openai.com/api/). By entering your burning questions, you interact with a formatted simulation of a wise Oracle. Responses from Oracle hint at inspiration and mystery with just a touch of existentialism.
+Oracle is a simple application that interacts with GPT-3, an AI model crafted by [OpenAI](https://openai.com/api/). By entering your burning questions, you are conversing with a simulation of a wise Oracle. Responses from Oracle hint at inspirational and mysterious, with just a touch of existentialism.
+
+## Project Goals
+
+The goal of this project was to showcase my front-end development skills and highlight my love of design for Shopify's Front End Developer Intern Challenge.
 
 ## Technical Requirements
 
 - [x] Simple-to-use interface
 - [x] A form for entering text prompts
 - [x] Submitting the form sends the prompt to the OpenAI API
-- [x] Results are displayed in a list, sorted from newest to oldest. Each result should include the original prompt and a response from the API.
+- [x] Results displayed in a list, sorted from newest to oldest
+- [x] Each result includes the original prompt and a response from the API
 - [x] The HTML that ends up being served client-side should be accessible and semantic
 
 ##### Extras:
 
 - [x] Nicer design
-- [x] Make the app more specific to a single purpose.
+- [x] Make the app more specific to a single purpose
 
 ## Technologies and Tools
 
@@ -45,22 +50,18 @@ Oracle is a simple application that interacts with GPT-3, an AI model crafted by
 - React
 - HTML
 - CSS
-- Figma
-- GitHub Projects
-
-## Project Goals
-
-The goal of this project was to showcase my front-end development skills, meet specified requirements, and highlight my love of design for Shopify's Front End Developer Intern Challenge.
+- [Figma](https://www.figma.com/file/QECWRUUk9CP29SclAS2XcM/Oracle?node-id=0%3A1)
+- [GitHub Projects](https://github.com/mcfrann/oracle/projects/1)
 
 ## Site Examples
 
 Ask Oracle your questions:
 
-![siteGIF](https://media.giphy.com/media/LRNJQfRMud1rUQaiB6/giphy.gif)
+![siteGIF](https://media.giphy.com/media/LKnBnGhWIAD9RxW8iq/giphy.gif)
 
 Scroll through your answers, from newest to oldest:
 
-![scrollingGif](https://media.giphy.com/media/K9yHD9iTw1UhmmRCdD/giphy.gif)
+![scrollingGif](https://media.giphy.com/media/JZebhOgndBaIcqcNIl/giphy.gif)
 
 Responsive mobile-friendly design:
 
@@ -74,8 +75,6 @@ To run this app locally:
 2. Run `cd oracle` to navigate into the repository
 3. Run `npm install`
 4. Run `npm start`
-
-Alternatively, visit the deployment link above!
 
 ## Attributions
 
