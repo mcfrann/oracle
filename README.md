@@ -24,7 +24,7 @@ Check out the deployed site [here](https://oracle-ai.herokuapp.com/).
 ## Overview
 
 Do you struggle with some of life's deepest questions? Ask Oracle.
-Oracle is a simple application that reacts with GPT-3, an AI model crafted by [OpenAI](https://openai.com/api/). By entering your burning questions, you interact with a formatted simulation of a wise Oracle. Responses from Oracle hint at inspiration and mystery with just a touch of existentialism.
+Oracle is a simple application that interacts with GPT-3, an AI model crafted by [OpenAI](https://openai.com/api/). By entering your burning questions, you interact with a formatted simulation of a wise Oracle. Responses from Oracle hint at inspiration and mystery with just a touch of existentialism.
 
 ## Technical Requirements
 
