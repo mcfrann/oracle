@@ -6,17 +6,11 @@ import QuestionContainer from './Components/QuestionContainer/QuestionContainer'
 
 const App = () => {
   const [question, setQuestion] = useState('')
-  const [error, setError] = useState('')
-  const [conversation, setConversation] = useState([
-    {
-      id: '',
-      you: '',
-      oracle: ''
-    }
-  ])
+  const [conversation, setConversation] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
 
   const updateQuestion = (e) => {
-    setQuestion((prevState) => e.target.value)
+    setQuestion(e.target.value)
   }
 
   const submitQuestion = (e) => {
@@ -25,8 +19,7 @@ const App = () => {
     postQuestion(question)
       .then((response) => {
         if (!response.ok) {
-          setError((prevState) => 'Uh oh. Please try another question.')
-          alert(error)
+          alert('Uh oh. Please try another question.')
         } else {
           return response.json()
         }
@@ -38,16 +31,17 @@ const App = () => {
           oracle: answer.choices[0].text
         }
         setConversation((prevState) => [questionAnswer, ...conversation])
+        setIsLoading(false)
         clearInput()
       })
   }
 
   const clearInput = () => {
-    setQuestion((prevState) => '')
+    setQuestion('')
   }
 
   const validate = () => {
-    !question && alert('Please enter a question.')
+    !question ? alert('Please enter a question.') : setIsLoading(true)
   }
 
   return (
@@ -58,7 +52,7 @@ const App = () => {
           submitQuestion={submitQuestion}
           value={question}
         />
-        <QuestionContainer conversation={conversation} />
+        <QuestionContainer conversation={conversation} isLoading={isLoading} />
       </section>
     </main>
   )
