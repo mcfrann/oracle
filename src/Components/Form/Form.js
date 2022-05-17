@@ -16,14 +16,7 @@ const Form = ({ conversation, setConversation, setIsLoading }) => {
     e.preventDefault(e)
     validate()
     postQuestion(question)
-      .then((response) => {
-        if (!response.ok) {
-          // alert('Uh oh. Please try another question.')
-          setError('The Oracle is currently unclear. Please ask again later.')
-        } else {
-          return response.json()
-        }
-      })
+      .then((response) => response.json())
       .then((answer) => {
         const questionAnswer = {
           id: Date.now(),
@@ -33,6 +26,10 @@ const Form = ({ conversation, setConversation, setIsLoading }) => {
         setConversation((prevState) => [questionAnswer, ...conversation])
         setIsLoading(false)
         clearInput()
+      })
+      .catch((err) => {
+        setIsLoading('')
+        setError('The Oracle is currently unclear. Please ask again later.')
       })
   }
 
