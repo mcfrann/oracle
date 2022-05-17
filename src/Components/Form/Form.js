@@ -29,7 +29,7 @@ const Form = ({ updateQuestion, submitQuestion, value }) => {
 export default Form
 
 Form.propTypes = {
-  updateQuestion: PropTypes.any,
-  submitQuestion: PropTypes.any,
-  value: PropTypes.string
+  updateQuestion: PropTypes.func.isRequired,
+  submitQuestion: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired
 }
