@@ -1,7 +1,6 @@
 # Oracle
 
-Shopify's Front End Developer Intern Challenge for the Fall of 2022.
-[Spec](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit)
+Shopify's Front End Developer Intern Challenge for the Fall of 2022. (Spec [here](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit)).
 
 ##### Created by:
 
@@ -37,7 +36,7 @@ The goal of this project was to showcase my front-end development skills and hig
 - [x] Submitting the form sends the prompt to the OpenAI API
 - [x] Results displayed in a list, sorted from newest to oldest
 - [x] Each result includes the original prompt and a response from the API
-- [x] The HTML that ends up being served client-side should be accessible and semantic
+- [x] The HTML that ends up being served client-side should be accessible and semantic (100% Lighthouse Accessibility rating)
 
 ##### Extras:
 
