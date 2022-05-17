@@ -1,9 +1,8 @@
 .question-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 23vh;
+  height: 30vh;
   width: 100vw;
   margin-top: 18em;
 }
@@ -29,7 +28,6 @@
 
 .submit-question {
   width: 20vw;
-  height: 25vh;
   border-radius: 0.2em;
   border: 0;
   background-color: #f7cbbd;
@@ -37,6 +35,12 @@
   font-size: 1.5em;
   font-family: 'Zen Loop', cursive;
   font-weight: 600;
+}
+
+.error-message {
+  color: #fefee4;
+  font-size: 1.5em;
+  margin-bottom: 0;
 }
 
 /* ------------------ effects ------------------ */

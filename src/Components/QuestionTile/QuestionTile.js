@@ -15,7 +15,7 @@ const QuestionTile = ({ id, question, answer }) => {
 export default QuestionTile
 
 QuestionTile.propTypes = {
-  id: PropTypes.number,
-  question: PropTypes.string,
-  answer: PropTypes.string
+  id: PropTypes.number.isRequired,
+  question: PropTypes.string.isRequired,
+  answer: PropTypes.string.isRequired
 }

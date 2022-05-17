@@ -1,8 +1,9 @@
 import QuestionTile from '../QuestionTile/QuestionTile'
 import './QuestionContainer.css'
 import PropTypes from 'prop-types'
+import ReactLoading from 'react-loading'
 
-const QuestionContainer = ({ conversation }) => {
+const QuestionContainer = ({ conversation, isLoading }) => {
   let counter = 0
 
   const questions = conversation.map((convo) => {
@@ -21,7 +22,15 @@ const QuestionContainer = ({ conversation }) => {
 
   return (
     <section className='question-container'>
-      {questions}
+      {isLoading ? (
+        <ReactLoading
+          type='spinningBubbles'
+          color='#D8BA85'
+          className='loading-spinner'
+        />
+      ) : (
+        questions
+      )}
       <div
         className='gradient-scroll'
         style={{ display: counter < 2 ? 'none' : 'block' }}
@@ -33,5 +42,6 @@ const QuestionContainer = ({ conversation }) => {
 export default QuestionContainer
 
 QuestionContainer.propTypes = {
-  conversation: PropTypes.array
+  conversation: PropTypes.arrayOf(PropTypes.object).isRequired,
+  isLoading: PropTypes.bool.isRequired
 }

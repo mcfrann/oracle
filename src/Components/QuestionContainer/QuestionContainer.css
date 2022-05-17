@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 33vh;
+  height: 35vh;
   width: 100vw;
   overflow-y: scroll;
-  margin-top: 1.5em;
   border-radius: 0.2em;
+}
+
+.loading-spinner {
+  margin-top: 10vh;
 }
 
 .gradient-scroll {
