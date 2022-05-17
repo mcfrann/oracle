@@ -5,9 +5,11 @@ import PropTypes from 'prop-types'
 
 const Form = ({ conversation, setConversation, setIsLoading }) => {
   const [question, setQuestion] = useState('')
+  const [error, setError] = useState('')
 
   const updateQuestion = (e) => {
     setQuestion(e.target.value)
+    setError('')
   }
 
   const submitQuestion = (e) => {
@@ -16,7 +18,8 @@ const Form = ({ conversation, setConversation, setIsLoading }) => {
     postQuestion(question)
       .then((response) => {
         if (!response.ok) {
-          alert('Uh oh. Please try another question.')
+          // alert('Uh oh. Please try another question.')
+          setError('The Oracle is currently unclear. Please ask again later.')
         } else {
           return response.json()
         }
@@ -38,7 +41,7 @@ const Form = ({ conversation, setConversation, setIsLoading }) => {
   }
 
   const validate = () => {
-    !question ? alert('Please enter a question.') : setIsLoading(true)
+    !question ? setError('Please enter a question.') : setIsLoading(true)
   }
 
   return (
@@ -61,6 +64,7 @@ const Form = ({ conversation, setConversation, setIsLoading }) => {
         className='submit-question shadow-drop-center'
         onClick={submitQuestion}
       />
+      {error && <p className='error-message'>{error}</p>}
     </form>
   )
 }
