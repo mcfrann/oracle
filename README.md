@@ -1,6 +1,6 @@
 # Oracle
 
-Shopify's Front End Developer Intern Challenge for the Fall of 2022. (Spec [here](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit)).
+Shopify's Front End Developer Intern Challenge for the Fall of 2022. | Spec [here](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit)
 
 ##### Created by:
 
