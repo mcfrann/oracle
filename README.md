@@ -73,7 +73,10 @@ To run this app locally:
 1. Run `git clone git@github.com:mcfrann/oracle.git` in your command line
 2. Run `cd oracle` to navigate into the repository
 3. Run `npm install`
-4. Run `npm start`
+4. Sign up for API key at [OpenAI](https://openai.com/)
+5. Create `.env` file and enter `REACT_APP_API_KEY=YOUR_API_KEY_HERE`
+6. In `.gitignore` file, type `# api keys` new line `.env` and commit
+7. Run `npm start`
 
 ## Attributions
 
