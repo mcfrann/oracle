@@ -1,7 +1,5 @@
 # Oracle
 
-Shopify's Front End Developer Intern Challenge for the Fall of 2022. | Spec [here](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit)
-
 ##### Created by:
 
 Francesca McConnell | [Github](https://github.com/mcfrann), [LinkedIn](https://www.linkedin.com/in/francesca-mcconnell/)
@@ -80,4 +78,4 @@ To run this app locally:
 
 ## Attributions
 
-Thanks to OpenAI for making such a cool [API](https://openai.com/api/) and thank you to [Shopify](https://www.shopify.com/) for your consideration!
+Thanks to OpenAI for making such a cool [API](https://openai.com/api/)!
